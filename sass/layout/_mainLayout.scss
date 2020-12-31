@@ -1,17 +1,5 @@
-* {
-    box-sizing: inherit;
-
-    &:before,
-    &:after {
-        box-sizing: inherit;
-    }
-}
-
-html {
-    box-sizing: border-box;
-}
 body {
-    background: #f6f8ff;
+    background: $main-background;
 }
 
 .main {
@@ -23,15 +11,16 @@ body {
 }
 
 .gridMain {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 90vh;
-    max-height: 90vh;
     margin: auto;
+    max-height: 90vh;
+    width: 90vh;
+
     @media screen and (orientation: portrait) {
-        width: 90vw;
-        max-height: 90vw;
         margin: 10px auto;
+        max-height: 90vw;
+        width: 90vw;
     }
 }

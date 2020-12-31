@@ -1,12 +1,12 @@
 .gridField {
-    min-width: 5px;
-    min-height: 5px;
     border: 1px solid $color-grey-light-1;
     flex: 1;
+    min-height: 5px;
+    min-width: 5px;
 
     &__container {
-        display: flex;
         align-items: stretch;
+        display: flex;
         flex: 1;
     }
 }
