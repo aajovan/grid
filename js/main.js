@@ -39,7 +39,6 @@ var checkUserInput = function checkUserInput(number) {
 }; 
 
 //Generate listeners for each grid field, define grid field behaviour
-//TO DO - replace for each - IE11?
 
 var generateEventListeners = function generateEventListeners() {
   $("." + globalFields_UI.gridField).each(function (i) {
