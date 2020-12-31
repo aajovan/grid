@@ -10,7 +10,6 @@ var globalUI = {
   colorPicker: "colorPick",
   colorPickerCheckBox: "usePicker",
   defaultColor: "rgb(255, 255, 255)",
-  userError: "Unesite broj između 16 i 64!"
 }; 
 
 //Main function
@@ -33,8 +32,7 @@ var checkUserInput = function checkUserInput(number) {
   if (number && number > 15 && number < 65) {
     return true;
   }
-
-  alert(globalUI.userError);
+  $('#popup').fadeIn(300);
   return false;
 }; 
 
@@ -91,6 +89,10 @@ var generateEmptyGrid = function generateEmptyGrid(number) {
     }
   }
 };
+
+$('.popup__btn-close').on('click', function () {
+  $('#popup').fadeOut(300);
+});
 
 document
   .getElementById(globalUI.btnGenerate)

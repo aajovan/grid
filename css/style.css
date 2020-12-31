@@ -128,3 +128,40 @@ body {
     background-color: #4cd964; }
     .switch:checked:before {
       left: calc(100% - 29px); }
+
+.popup {
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2; }
+  .popup__btn-close {
+    background-color: #707070;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    height: 100%;
+    padding: 5px 10px;
+    text-decoration: none; }
+    .popup__btn-close:hover {
+      border: none;
+      cursor: pointer; }
+  .popup__content {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 2px 6px black;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 350px;
+    padding: 15px;
+    position: relative;
+    width: 100%; }
+    @media screen and (max-width: 1024px) {
+      .popup__content {
+        width: 90%; } }
+    .popup__content > * {
+      margin: 15px 10px; }
