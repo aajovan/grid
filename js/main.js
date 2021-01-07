@@ -49,6 +49,7 @@
   //Generate listeners for each grid field, define grid field behaviour
 
   function generateEventListeners() {
+    $(globalUI.gridField).off();
     $(globalUI.gridField).each(function (i) {
       this.addEventListener("mouseenter", function (event) {
         var colorCheckBox = $(globalUI.colorPickerCheckBox).prop("checked");
