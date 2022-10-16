@@ -12,33 +12,30 @@
 
 <body>
     <div class="main">
-        <div class="options__container">
+        <div class="options">
             <div class="options__box">
-                <label for="gridSize">Dimenzija</label>
-                <input type="number" name="gridSize" id="gridSize" min="16" max="64" placeholder="16-64">
+                <label for="grid-size">Dimenzija</label>
+                <input type="number" name="grid-size" id="grid-size" min="16" max="64" placeholder="16-64">
             </div>
-
             <div class="options__box">
-                <label for="colorPick">Odaberite boju</label>
-                <input type="color" name="colorPick" id="colorPick">
+                <label for="color-pick">Odaberite boju</label>
+                <input type="color" name="color-pick" id="color-pick">
             </div>
-
             <div class="options__box">
-                <label for="usePicker">Boja</label>
-                <input type="checkbox" id="usePicker" name="usePicker" value="false" class="switch">
+                <label for="use-color">Boja</label>
+                <input type="checkbox" id="use-color" name="use-color" value="false" class="switch">
             </div>
             <div class="options__box">
                 <button id="btn-initialize">Generiraj/Reset</button>
             </div>
-
         </div>
         <div class="popup" id="popup">
             <div class="popup__content">
-                <h3>Unesite broj između 16 i 64!</h3>
-                <a class="popup__btn-close" href="javascript:void(0)">Zatvori</a>
+                <p>Unesite broj između 16 i 64!</p>
+                <a class="popup__close" href="javascript:void(0)">Zatvori</a>
             </div>
         </div>
-    <div class="gridMain"></div>
+        <div class="grid"></div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>

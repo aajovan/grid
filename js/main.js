@@ -1,17 +1,17 @@
 "use strict";
 
   var globalUI = {
-    mainContainer: ".gridMain",
-    gridSize: "#gridSize",
+    mainContainer: ".grid",
+    gridSize: "#grid-size",
     btnGenerate: "#btn-initialize",
-    gridField: ".gridField",
-    gridFieldClass: "gridField",
-    gridFieldContainer: ".gridField__container",
-    gridFieldContainerClass: "gridField__container",
-    colorPicker: "#colorPick",
-    colorPickerCheckBox: "#usePicker",
+    gridField: ".grid-field",
+    gridFieldClass: "grid-field",
+    gridFieldContainer: ".grid-field__container",
+    gridFieldContainerClass: "grid-field__container",
+    colorPicker: "#color-pick",
+    colorPickerCheckBox: "#use-color",
     defaultColor: "rgb(255, 255, 255)",
-    popupBtn: ".popup__btn-close",
+    popupBtn: ".popup__close",
     popup: "#popup"
   };
 

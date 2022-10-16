@@ -1,5 +1,5 @@
 body {
-    background: $main-background;
+    background: $color-background;
 }
 
 .main {
@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 
-.gridMain {
+.grid {
     display: flex;
     flex: 1;
     flex-direction: column;

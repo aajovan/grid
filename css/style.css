@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
   text-align: center; }
 
-.gridMain {
+.grid {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -38,63 +38,62 @@ body {
   max-height: 90vh;
   width: 90vh; }
   @media screen and (orientation: portrait) {
-    .gridMain {
+    .grid {
       margin: 10px auto;
       max-height: 90vw;
       width: 90vw; } }
 
-.gridField {
+.grid-field {
   border: 1px solid #d3d3d3;
   flex: 1;
   min-height: 5px;
   min-width: 5px; }
-  .gridField__container {
+  .grid-field__container {
     align-items: stretch;
     display: flex;
     flex: 1; }
 
-.options__container {
+.options {
   background-color: #fff;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px; }
-  .options__container button {
+  .options button {
     background-color: #707070;
     border: none;
     border-radius: 50px;
     color: #fff;
     height: 100%;
     padding: 5px 10px; }
-    .options__container button:hover {
+    .options button:hover {
       border: none;
       cursor: pointer; }
-  .options__container label {
+  .options label {
     font-size: 18px;
     font-weight: 400;
     padding-right: 10px; }
-  .options__container input {
+  .options input {
     border: 1px solid #d3d3d3;
     border-radius: 50px;
     height: 100%;
     min-width: 70px;
     text-align: center; }
-    .options__container input::-webkit-color-swatch {
+    .options input::-webkit-color-swatch {
       border-radius: 50px;
       height: 100%;
       padding: 0; }
-    .options__container input::-webkit-color-swatch-wrapper {
+    .options input::-webkit-color-swatch-wrapper {
       border-radius: 50px;
       height: 100%;
       padding: 0; }
-
-.options__box {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin: 5px;
-  min-height: 34px; }
+  .options__box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    min-height: 34px; }
 
 .switch {
   appearance: none;
@@ -138,7 +137,7 @@ body {
   top: 0px;
   width: 100%;
   z-index: 2; }
-  .popup__btn-close {
+  .popup__close {
     background-color: #707070;
     border: none;
     border-radius: 50px;
@@ -146,7 +145,7 @@ body {
     height: 100%;
     padding: 5px 10px;
     text-decoration: none; }
-    .popup__btn-close:hover {
+    .popup__close:hover {
       border: none;
       cursor: pointer; }
   .popup__content {
@@ -163,5 +162,8 @@ body {
     @media screen and (max-width: 1024px) {
       .popup__content {
         width: 90%; } }
-    .popup__content > * {
-      margin: 15px 10px; }
+    .popup__content p {
+      margin: 15px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1.2; }
